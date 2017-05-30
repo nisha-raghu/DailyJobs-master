@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="false"
+    android:layout_width="fill_parent"
+    tools:context="com.example.nisha.daily_jobs.employer.view.Settings.EmployerSettings"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:paddingBottom="250dp"
+        android:weightSum="1">
+
+         <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="cursive"
+            android:text="Change Account Details"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff8280ff"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextUpdateUsername"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignRight="@+id/textView4"
+            android:layout_below="@+id/textView4"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="82dp"
+            android:background="@android:color/white"
+            android:gravity="center|clip_vertical"
+            android:hint="Update Username"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editTextUpdatePassowrd"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextUpdateUsername"
+            android:layout_alignRight="@+id/editTextUpdateUsername"
+            android:layout_below="@+id/editTextUpdateUsername"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            android:gravity="center|center_vertical"
+            android:hint="Update Password"
+            android:password="true"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editTextUpdateEmail"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextUpdatePassowrd"
+            android:layout_alignRight="@+id/editTextUpdatePassowrd"
+            android:layout_below="@+id/editTextUpdatePassowrd"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            android:gravity="center|center_vertical"
+            android:hint="Update Email"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextUpdateEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#ff8280ff"
+            android:text="Change Now!" />
+    </LinearLayout>
+    </ScrollView>

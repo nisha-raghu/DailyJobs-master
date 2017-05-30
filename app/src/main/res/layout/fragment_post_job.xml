@@ -1,0 +1,200 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="false"
+    android:layout_width="fill_parent"
+    tools:context="com.example.nisha.daily_jobs.employer.view.PostJob.PostJob"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textViewPostJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|top"
+            android:fontFamily="cursive"
+            android:text="Create Job"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff8990ff"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewJobTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Title"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff8990ff"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/editTextJobTitle"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewPostJob"
+            android:background="@android:color/white"
+            android:editable="true" />
+
+        <TextView
+            android:id="@+id/textViewCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editTextJobTitle"
+            android:layout_marginTop="10dp"
+            android:text="Description"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff8990ff"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/editTextCompanyName"
+            android:layout_width="335dp"
+            android:layout_height="160dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewCompany"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textViewStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/switchJobType"
+                android:layout_below="@+id/switchJobType"
+                android:layout_gravity="center_vertical"
+                android:text="Date"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ff8990ff"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textViewDisplayDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:background="@android:color/white"
+                android:text="Date"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="0.41" />
+
+            <Button
+                android:id="@+id/btnAddDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:background="#ff909fff"
+                android:text="Change date"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textViewNumPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/datePicker"
+            android:layout_marginTop="10dp"
+            android:text="Time Duration(in Hours)"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff8990ff"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/editTextNumPositions"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/datePicker"
+            android:layout_alignRight="@+id/editTextJobDesc"
+            android:layout_below="@+id/textViewNumPosition"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textViewJobDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/datePicker"
+            android:layout_below="@+id/editTextNumPositions"
+            android:layout_marginTop="10dp"
+            android:text="Pay per hour($/hr)"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff8990ff"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/editTextJobDesc"
+            android:layout_width="334dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/datePicker"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/switchJobType"
+            android:layout_below="@+id/textViewJobDescription"
+            android:background="@android:color/white"
+            android:editable="true"
+            android:ems="10"
+            android:hint="Please Enter a minimum wage of >4$ per hr"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/textViewJobLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/datePicker"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:text="Job Location"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff8990ff"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/editTextJobLocation"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/scrollView"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:inputType="textPostalAddress" />
+
+        <Button
+            android:id="@+id/buttonPostJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/datePicker"
+            android:layout_below="@+id/scrollView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#ff8b95ff"
+            android:text="Add Job"
+            android:textAllCaps="false"
+            android:textStyle="italic" />
+    </LinearLayout>
+</ScrollView>

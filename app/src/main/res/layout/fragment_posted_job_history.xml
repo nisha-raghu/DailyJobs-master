@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container_history"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/textViewJobHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|top"
+        android:fontFamily="cursive"
+        android:gravity="center|center_vertical|center_horizontal|clip_horizontal"
+        android:text="Daily Jobs"
+        android:textColor="#ff7b8fff"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        />
+
+    <ImageView
+        android:id="@+id/refreshId"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/refresh" />
+
+    <ExpandableListView
+        android:id="@+id/expandableListViewJobHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/textViewJobHistory"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/black"
+        android:paddingTop="0dp"
+        android:textAlignment="center"
+        android:textColor="#ff7b8fff" />
+
+</RelativeLayout>
